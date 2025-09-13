@@ -1,15 +1,23 @@
 {
-  "name": "meu-projeto-backend",
+  "name": "ex01",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FiaresAlan/projeto-backend-SENAI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FiaresAlan/projeto-backend-SENAI/issues"
+  },
+  "homepage": "https://github.com/FiaresAlan/projeto-backend-SENAI#readme",
+  "description": ""
 }
