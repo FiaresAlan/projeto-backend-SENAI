@@ -43,4 +43,4 @@ app.get("/calculadora", (req, res)=>{
 
 app.listen(PORT, ()=>{
     console.log(`Servidor esta sendo executado na porta http://localhost:${PORT}`)
-})  
+})   
