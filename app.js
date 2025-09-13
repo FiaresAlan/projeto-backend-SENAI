@@ -8,10 +8,11 @@ app.get('/operacao/:tipo', (req, res)=>{
 
     if(isNaN(numUm) || numUm == undefined || numUm == null || isNaN(numDois) || numDois == undefined || numDois == null){
         return res.status(400).send(`Entrada de número inválido!`);}
+    const numUmFloat = parseFloat(numUm);
+    const numDoisFloat = parseFloat(numDois);
 
-        const numUmFloat = parseFloat(numUm);
-        const numDoisFloat = parseFloat(numDois);
-        let resultado;
+try {
+    let resultado;
     switch(tipo){
         case 'soma':
             resultado = (numUmFloat + numDoisFloat).toFixed(2);
@@ -30,10 +31,13 @@ app.get('/operacao/:tipo', (req, res)=>{
                 break;
         default:
             return res.status(400).json({ error: "Tipo de operação inválida. Use 'soma', 'subtração', 'multiplicação' ou 'divisão'." });
-        }
-    res.status(200).send(`O resultado da ${tipo} entre ${numUmFloat} e ${numDoisFloat} é ${resultado}`);
-});
+                }
+res.status(200).send(`O resultado da ${tipo} entre ${numUmFloat} e ${numDoisFloat} é ${resultado}`);
+    
+} catch (error) {
+    return res.status(500).send("Erro reportado no servidor", error)
+}});
 
 app.listen(PORT, ()=>{
     console.log(`Servidor esta sendo executado na porta http://localhost:${PORT}`)
-})   
+}); 
