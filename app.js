@@ -26,7 +26,7 @@ app.get("/calculadora", (req, res)=>{
                 break;
             
             case "divisao":
-                if (numberDois === 0){
+                if (numberDois === 0 || numberUm === 0){
                     return res.status(400).send(`Não divida por zero`, error)
                 }
                 resultado = (numberUm / numDois).toFixed(2);
@@ -43,4 +43,4 @@ app.get("/calculadora", (req, res)=>{
 
 app.listen(PORT, ()=>{
     console.log(`Servidor esta sendo executado na porta http://localhost:${PORT}`)
-}) 
+})  
