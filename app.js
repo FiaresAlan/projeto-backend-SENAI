@@ -44,4 +44,4 @@ app.get("/usuarios", (req, res)=>{
 
 app.listen(PORT, ()=>{
     console.log(`Servidor sendo executado na porta http://localhost:${PORT}`)
-})
+});
