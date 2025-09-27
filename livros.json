@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "titulo": "Clear Code With NodeJS",
+        "autor": "Fiares",
+        "anoPublicacao": 2017,
+        "exemplares": 34
+    },
+    {
+        "id": 2,
+        "titulo": "Python to Back-end",
+        "autor": "Jota",
+        "anoPublicacao": 2024,
+        "exemplares": 12
+    },
+    {
+        "id": 3,
+        "titulo": "Front-end ReactJS English",
+        "autor": "Larissa",
+        "anoPublicacao": 2021,
+        "exemplares": 19
+    },
+    {
+        "id": 4,
+        "titulo": "DataScience with Python",
+        "autor": "Limeira",
+        "anoPublicacao": 2019,
+        "exemplares": 43
+    }
+]
