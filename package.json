@@ -8,13 +8,25 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mssql": "^12.0.0",
     "tedious": "^19.0.0"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmartins-dev/S3_R5-AT1-lojaExpricio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmartins-dev/S3_R5-AT1-lojaExpricio/issues"
+  },
+  "homepage": "https://github.com/pmartins-dev/S3_R5-AT1-lojaExpricio#readme",
+  "description": ""
 }
